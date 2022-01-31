@@ -1,0 +1,84 @@
+body {
+  font-family: 'Arial', sans-serif; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+h5 {
+  margin: 1rem;
+}
+
+.new-user-form {
+  margin: 1rem;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 0.75rem;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field &::placeholder {
+  color:  transparent;
+}
+
+.form__field &:placeholder-shown .form__label {
+  font-size:  0.75rem;
+  cursor:  text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 0.75rem;
+  color: #4b4b4b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+
+.form__field:focus .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 0.75rem;
+  color: #11998e;
+  font-weight:700;    
+}
+
+.gamer-list {
+  margin-top: 4rem;
+}
+
+button {
+  background: #dedede;
+  border:  none;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
