@@ -20,6 +20,10 @@ brew install yarn
 
 The list of users should update as you add them.  When the database is first being bootstrapped, and the first user is entered, the user is successfully added to the database, but the list doesn't update.  Any subsequent users added will result in the expected behavior (the list being updated dynamically)
 
+# Bug fixes
+
+Find and fix the typo (Handler should be Handle)
+
 # Feature Requests
 
 Implement a basic search by a users handle.
