@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 
+/**
+ * The form, with a little added style using inputs
+ * and labels.  This consumes the props passed into the component
+ * by the parents, and bubbles up actions when an event occurs.
+ * 
+ * Props in, Actions out
+ */ 
 export default class NewUserForm extends Component  {
 
     render() {

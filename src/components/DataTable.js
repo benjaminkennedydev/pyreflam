@@ -2,6 +2,17 @@ import React, { Component } from 'react';
 import Cell from './Cell';
 import '../styles/datatable.css';
 
+/**
+ * Iterating over the headings and rows passed into the component.
+ * 
+ * You'll notice the tbody contains a nested loop, because the tabular
+ * data model is an array of arrays, or: 
+ * 
+ * [
+ * 		[handle: '8ball', ...], 
+ * 		[handle: 'pdiddy', ...]
+ * ]
+ */ 
 export default class DataTable extends Component {
 	render() {
 		const { headings, rows } = this.props;
